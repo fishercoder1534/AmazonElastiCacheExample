@@ -10,6 +10,7 @@ import redis.clients.jedis.Jedis;
 import java.util.List;
 
 /**
+ * This is a simple program to work with AmazonElastiCache on AWS.
  * Created by stevesun on 12/18/16.
  */
 public class AmazonElastiCacheExample {
@@ -38,7 +39,7 @@ public class AmazonElastiCacheExample {
         System.out.println("Got client, client.getEndpointPrefix() = " + client.getEndpointPrefix());
         client.setRegion(Region.getRegion(Regions.AP_NORTHEAST_2));
 //		client.setRegion(Region.getRegion(Regions.EU_CENTRAL_1));
-    //		client.setEndpoint("https://YOUR_REDIS_INSTANCE_NAME.nquffl.0001.apn2.cache.amazonaws.com:6379");
+    //		client.setEndpoint("https://hermes-dev-0001-001.nquffl.0001.apn2.cache.amazonaws.com:6379");
         System.out.println("setEndpoint passed.");
         DescribeCacheClustersRequest dccRequest = new DescribeCacheClustersRequest();
         dccRequest.setShowCacheNodeInfo(true);
