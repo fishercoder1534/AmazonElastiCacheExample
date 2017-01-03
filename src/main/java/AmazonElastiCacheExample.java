@@ -23,7 +23,7 @@ public class AmazonElastiCacheExample {
 
         AWSCredentials credentials = null;
         try {
-            credentials = new ProfileCredentialsProvider("search-dev").getCredentials();
+            credentials = new ProfileCredentialsProvider("default").getCredentials();
             System.out.println("Went thru credentials.");
         } catch (Exception e) {
             System.out.println("Got exception..........");
@@ -38,7 +38,7 @@ public class AmazonElastiCacheExample {
         System.out.println("Got client, client.getEndpointPrefix() = " + client.getEndpointPrefix());
         client.setRegion(Region.getRegion(Regions.AP_NORTHEAST_2));
 //		client.setRegion(Region.getRegion(Regions.EU_CENTRAL_1));
-//		client.setEndpoint("https://hermes-dev-0001-001.nquffl.0001.apn2.cache.amazonaws.com:6379");
+    //		client.setEndpoint("https://YOUR_REDIS_INSTANCE_NAME.nquffl.0001.apn2.cache.amazonaws.com:6379");
         System.out.println("setEndpoint passed.");
         DescribeCacheClustersRequest dccRequest = new DescribeCacheClustersRequest();
         dccRequest.setShowCacheNodeInfo(true);
