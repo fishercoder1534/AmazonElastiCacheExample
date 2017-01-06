@@ -1,4 +1,4 @@
-# AmazonElastiCacheExample
+# AmazonElastiCacheExample [![Build Status](https://travis-ci.org/fishercoder1534/AmazonElastiCacheExample.svg?branch=master)](https://travis-ci.org/fishercoder1534/AmazonElastiCacheExample)
 
 As per AWS documentation, your app must be in the same VPC and your security group of Elasticache clusters/instances must have proper settings, in order to access your Elasticache clusters/instances.
 
